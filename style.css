@@ -1,0 +1,199 @@
+/* General Styling for HTML */
+html {
+    font-family: Helvetica; /* Set font to Helvetica */
+    font-size: 22px; /* Set default font size */
+    color: seashell; /* Set text color to seashell */
+    background-color: black; /* Set background color to black */
+    opacity: 0.9; /* Set page opacity */
+    text-align: center; /* Center-align text */
+}
+
+/* Body Styling */
+body{
+    justify-content: center; /* Center content horizontally in the body */
+}
+
+/* Styling for Logo */
+.logo{
+    justify-content: flex-end; /* Align logo to the right */
+    position: fixed; /* Fix position at the top */
+    top: 0; /* Place at the top of the screen */
+    margin: 10px 15px 15px 10px; /* Add margin around the logo */
+    left: 10px; /* Place the logo from the left */
+    height: 50px; /* Set the height of the logo */
+    color: seashell; /* Set logo color */
+}
+
+/* Navigation Bar Styling */
+nav {
+    position: fixed; /* Fix position to stay at the top */
+    right: 0; /* Align to the right */
+    display: inline-flex; /* Display as an inline flexbox */
+    text-decoration: underline; /* Underline the navigation text */
+    margin-right: 1px; /* Add slight margin to the right */
+    justify-content: right; /* Align navigation items to the right */
+    
+}
+
+nav a{
+    margin-right: 15px; /* Add margin to the right of each navigation item */
+    color: seashell; /* add seashell color to the links */
+}
+
+/* Fixed Header Styling */
+.fixed header {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out logo and navigation */
+    align-items: center; /* Vertically center the items */
+    position: fixed; /* Fix header at the top */
+    top: 0; /* Position header at the top */
+    left: 0; /* Align to the left edge */
+    right: 0; /* Align to the right edge */
+    height: 69px; /* Set header height */
+    padding: 0 20px; /* Add padding on both sides */
+    border-bottom: 1px solid seashell; /* Add border at the bottom */
+    background-color: black; /* Set background color to black */
+    z-index: 1000; /* Keep the header on top of other elements */
+}
+
+/* Mission Section Styling */
+.mission-background{
+    height: 700px; /* Set height of the background */
+    position: relative; /* Position it relative to its container */
+    width: 1200px; /* Set width of the container */
+}
+
+/* Mission Text Styling */
+.mission-text{
+    background-color: black; /* Set background color to black */
+    position: absolute; /* Position text absolutely within its container */
+    width: 100%; /* Full width */
+    top:275px; /* Place text lower in the section */
+    align-items: center; /* Align text to the center */
+}
+
+.mission-text h4{
+    margin-bottom: 7px; /* Add bottom margin to h4 */
+}
+
+.mission-text h2{
+    margin-top: 5px; /* Add top margin to h2 */
+}
+
+/* Featured Tea Section */
+.featured-tea{
+    width: 1000px; /* Set width of the featured tea section */
+    margin: 0 auto; /* Center-align the section */
+}
+
+/* Add top margin to Featured Tea */
+.featured-tea{
+    margin-top: 75px; /* Add top margin */
+}
+
+/* Featured Tea Images Layout */
+.featured-tea-images {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center-align the images */
+    flex-wrap: wrap; /* Allow the images to wrap */
+    gap: 30px; /* Add space between the images */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Styling for Each Tea Item */
+.tea-item {
+    text-align: center; /* Center-align text under each image */
+    max-width: 300px; /* Set a maximum width for each item */
+    width: 100%; /* Make the width 100% to be responsive */
+}
+
+/* Tea Item Image Styling */
+.tea-item img {
+    width: 100%; /* Make images responsive */
+    max-width: 300px; /* Limit the max width of images */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Add space below images */
+}
+
+/* Tea Item Title Styling */
+.tea-item h4 {
+    color: seashell; /* Set title color to seashell */
+    margin-top: 10px; /* Add margin to the top */
+    margin-bottom: 3px; /* Add margin to the bottom */
+}
+
+/* Locations Section Styling */
+.locations {
+    position: relative; /* Make locations section position relative */
+    width: 100%; /* Full width */
+    margin-top: 75px; /* Add margin on top */
+}
+
+/* Location Image Container */
+.location-image-container {
+    position: relative; /* Make this container relative for child positioning */
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Max width */
+    margin: 0 auto; /* Center-align the container */
+    height: 500px; /* Set height */
+}
+
+/* Location Image Styling */
+.location-image {
+    width: 100%; /* Make images responsive */
+}
+
+/* Location Title (text over image) */
+.location-title {
+    position: absolute; /* Position title absolutely over the image */
+    top: 10%; /* Position it 10% from the top */
+    left: 50%; /* Center-align horizontally */
+    transform: translateX(-50%); /* Adjust for perfect centering */
+}
+
+/* Styling for Location Address Boxes */
+.locations-address {
+    position: absolute; /* Position address boxes over the image */
+    top: 30%; /* Position it lower (30% from the top) */
+    left: 50%; /* Center-align horizontally */
+    transform: translateX(-50%); /* Adjust for perfect centering */
+    display: flex; /* Use flexbox to align address boxes */
+    justify-content: center; /* Center-align address boxes */
+    gap: 40px; /* Space between address boxes */
+    text-align: center; /* Center text */
+    opacity: 1; /* Full opacity */
+}
+
+/* Individual Location Address Box Styling */
+.location-downtown, .location-east-bayside, .location-oakdale {
+    background-color: black; /* Set background color to black */
+    padding: 20px; /* Add padding around the text */
+    width: 300px; /* Set width of each box */
+}
+
+/* Location Address Titles Styling */
+.location-downtown h3, .location-east-bayside h3, .location-oakdale h3 {
+    margin: 5px 0; /* Add vertical margin to address titles */
+}
+
+/* Bottom Section Styling (website text over image) */
+.bottom-website {
+    width: 100%; /* Full width */
+    text-align: center; /* Center-align text */
+    margin-top: 50px; /* Add top margin */
+    position: absolute; /* Position absolutely over the image */
+    top: 159%; /* Position it lower over the image */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for perfect centering */
+    background-color: black; /* Set background color to black */
+}
+
+/* Footer Styling */
+footer {
+    text-align: left; /* Align footer text to the left */
+    margin-left: 20px; /* Add left margin */
+    margin-top: 20%; /* Add top margin */
+    padding: 20px; /* Add padding around the footer */
+    width: 100%; /* Full width */
+    position: relative; /* Ensure footer stays in normal document flow */
+}
